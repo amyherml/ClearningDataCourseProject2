@@ -18,8 +18,14 @@ Here are the data for the project:
 
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
+#Files
+- *run_analysis.R* contains the codes used to perform the tasks above and generate result data set.
+- *CodeBook.md* gives a description of the variables, the data, and any transformations or work performed to clean up the data.
+- *Mean_grouped_X.txt* contains the cleaned data set from task #6 above
+- *Data* folder contains all the data download from the link above
+
 #Data Processing
-The main data processing tasks include the following: 
+The main data processing tasks proformed by the run_analysis.R include the following: 
 
 1. downloading the data from the link above, then 
 2. load all data table to R,
@@ -35,10 +41,4 @@ The main data processing tasks include the following:
 5. extracts only the measurements on the mean and standard deviation for each measurement, and 
 6. creates a second, independent tidy data set with the average of each variable for each activity and each subject. The result data set is stored in a txt file named "Mean_grouped_X.txt".
 
-#Files
-- *run_analysis.R* contains the codes used to perform the tasks above and generate result data set.
-- *CodeBook.md* gives a description of the variables, the data, and any transformations or work performed to clean up the data.
-- *Mean_grouped_X.txt* contains the cleaned data set from task #6 above
-- *Data* folder contains all the data download from the link above
-
-
+Please refer to the CodeBook.md for more information about the codes. 
