@@ -33,14 +33,15 @@ There are 561 features in total in the original data set. The complete list of v
 The main data processing tasks include the following: 
 
 1. downloading the data from the link above, then 
-2. load all data table to R,
+2. load all data table to R
 3. merge all data together
 4. correctly label the data set with
 
-..1. activity names,
-..2. feature names,
-..3. test or training data, and 
-..4. subject identifier;
+    - activity names,
+    - feature names,
+    - test or training data, and 
+    - subject identifier;
+
 
 5. extracts only the measurements on the mean and standard deviation for each measurement, and 
 6. creates a second, independent tidy data set with the average of each variable for each activity and each subject. The result data set is stored in a txt file named "Mean_grouped_X.txt".
