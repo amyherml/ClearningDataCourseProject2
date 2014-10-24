@@ -22,6 +22,7 @@ Here are the data for the project:
 
 #Data Processing
 The main data processing tasks include the following: 
+
 1. downloading the data from the link above, then 
 2. load all data table to R,
 3. merge all data together
@@ -53,9 +54,10 @@ unzip("Data.zip",exdir = "./Data")
 
 ```r
 temp   <- read.table("./Data/UCI HAR Dataset/features.txt")  
-temp   <- gsub("-","_",temp[,2])
-temp <- gsub("\\(\\)","B",temp)
-features <- gsub("\\(|\\)",".",temp)
+#transform the names of the features to a R-frendly version
+temp   <- gsub("-","_",temp[,2]) # change - to _
+temp <- gsub("\\(\\)","B",temp)  # change () to B
+features <- gsub("\\(|\\)",".",temp) # change any of ( or ) to . 
 # 561 rows  and 2 columns, stored the identifier of 561 features
 activities <- read.table("./Data/UCI HAR Dataset/activity_labels.txt")
 # 6 rows and 2 columns, stored the identifier of 6 different activities

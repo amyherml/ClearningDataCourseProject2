@@ -121,9 +121,10 @@ The complete list of variables of each feature vector is available in 'features.
 
 
 #Data Processing
-The main data processing tasks will include the following: 
+The main data processing tasks include the following: 
+
 1. downloading the data from the link above, then 
-2. load all data table to R,
+2. load all data table to R
 3. merge all data together
 4. correctly label the data set with
 ..1. activity names,
@@ -133,4 +134,9 @@ The main data processing tasks will include the following:
 5. extracts only the measurements on the mean and standard deviation for each measurement, and 
 6. creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
+The feature names are changed in the R codes to a R-frendly version, which includes the following tranformation: 
+
+1. change - to _
+2. change () to B
+3. change any of ( or ) to . 
 
