@@ -21,7 +21,7 @@ Here are the data for the project:
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 #Data Processing
-The main data procession will include the following: 
+The main data processing tasks include the following: 
 1. downloading the data from the link above, then 
 2. load all data table to R,
 3. merge all data together

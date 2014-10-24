@@ -83,3 +83,4 @@ aver_grouped_x <- data.frame(activities = as.factor(tlist_activity), Test = as.f
 
 write.table(aver_grouped_x,file="Mean_grouped_X.txt")
 
+
