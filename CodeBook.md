@@ -27,7 +27,7 @@ A full description of the data set is available from [here](https://github.com/a
 
 ##Features 
 
-There are 561 features in total in the original data set. The complete list of variables of each feature vector is available in 'features.txt'. for a full description of the features please refer to features_info.txt in the data folder. 
+There are 561 features in total in the original data set. The complete list of variables of each feature vector is available in features.txt in the Data folder. For a full description of the features please refer to features_info.txt in the Data folder. 
 
 #Data Processing
 The main data processing tasks include the following: 
