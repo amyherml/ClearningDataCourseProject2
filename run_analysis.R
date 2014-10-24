@@ -81,4 +81,5 @@ colnames(temp) <- colnames(subset[,4:ncol(subset)])
 aver_grouped_x <- data.frame(activities = as.factor(tlist_activity), Test = as.factor(tlist_test),      
                         subject = tlist_subject,temp[,])
 
+write.table(aver_grouped_x,file="Mean_grouped_X.txt")
 
