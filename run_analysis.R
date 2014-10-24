@@ -6,13 +6,16 @@ unzip("Data.zip",exdir = "./Data")
 
 ## ----,echo=TRUE----------------------------------------------------------
 temp   <- read.table("./Data/UCI HAR Dataset/features.txt")  
-#transform the names of the features to a R-frendly version
-temp   <- gsub("-","_",temp[,2]) # change - to _
-temp <- gsub("\\(\\)","B",temp)  # change () to B
-features <- gsub("\\(|\\)",".",temp) # change any of ( or ) to . 
-# 561 rows  and 2 columns, stored the identifier of 561 features
+
+# The feature names are changed in the R codes to a R-frendly version, which 
+# includes the following tranformation: 
+
+temp   <- gsub("-","_",temp[,2]) # 1. change "-" to "_"
+temp <- gsub("\\(\\)","B",temp)  # 2. change "()" to "B"
+features <- gsub("\\(|\\)",".",temp) # 3. change any other "(" or ")" to "." 
+# features: 561 rows  and 2 columns, stored the identifier of 561 features
 activities <- read.table("./Data/UCI HAR Dataset/activity_labels.txt")
-# 6 rows and 2 columns, stored the identifier of 6 different activities
+# activities: 6 rows and 2 columns, stored the identifier of 6 different activities
 
 
 ## ----,echo=TRUE----------------------------------------------------------
