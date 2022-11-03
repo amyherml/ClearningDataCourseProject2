@@ -1,6 +1,6 @@
 Read Me
 ==========================
-#Introduction
+# Introduction
 This project proform an excise to collect and clean data. Main tasks include the following: 
 
 1. Merges the training and the test sets to create one data set.
